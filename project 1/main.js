@@ -53,7 +53,7 @@ for (var i = 0; i < 2; i++) {
 //         alert('Введите значения обязательных расходов');
 //     }
 // } while (i < 2);
-
+ 
 appData.moneyPerDay = (appData.budget - (appData.expenses[requiredExpenses[0]] + appData.expenses[requiredExpenses[1]])) / 30;
 
 console.log(appData);
