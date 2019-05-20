@@ -34,6 +34,8 @@ var appData = {
                 i--;
             }
         }
+        appData.moneyPerDay = ((appData.budget - (appData.expenses[requiredExpenses[0]] + appData.expenses[requiredExpenses[1]])) / 30).toFixed();
+        console.log("Бюджет на 1 день: " + appData.moneyPerDay);
     },
     detectDayBudget: function(){
         if (appData.savings == true) {
@@ -118,10 +120,9 @@ console.log(dataInObj());
 //     }
 // } while (i < 2);
 
-if (!appData.expenses){   
-    appData.moneyPerDay = ((appData.budget - (appData.expenses[requiredExpenses[0]] + appData.expenses[requiredExpenses[1]])) / 30).toFixed();
-    console.log("Бюджет на 1 день: " + appData.moneyPerDay);
-}
+  
+    
+
 
 console.log(appData);
 
